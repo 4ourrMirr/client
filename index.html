@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Galactic Launcher</title>
+<title>MirSki Launcher</title>
 <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700;900&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
 <style>
 *{box-sizing:border-box;margin:0;padding:0;}
@@ -111,7 +111,7 @@ nav{position:relative;z-index:9999;}
       <polygon points="18,2 34,11 34,25 18,34 2,25 2,11" fill="#0d1428" stroke="#4dd0ff" stroke-width="2"/>
       <path d="M10 22 L14 14 L18 20 L22 12 L26 22" stroke="#4dd0ff" stroke-width="2.5" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
     </svg>
-    <span class="nav-logo-text">Galactic</span>
+    <span class="nav-logo-text">MIRSKI</span>
   </div>
   <div class="nav-links">
     <button class="nav-link active" onclick="showPage('home',this)">Home</button>
@@ -128,7 +128,7 @@ nav{position:relative;z-index:9999;}
       <div class="launch-wrapper">
         <button class="version-arrow left" onclick="changeVersion(-1)">&#8249;</button>
         <div class="hero-launch-btn" id="launchBtn" onclick="launchClient()">
-          <div class="launch-title" id="launchText">LAUNCH GALACTIC</div>
+          <div class="launch-title" id="launchText">LAUNCH MIRSKI</div>
           <div class="launch-version-row">
             <span class="launch-version-badge" id="versionBadge">6.4.0</span>
             <span class="launch-version-label" id="versionLabel">EaglercraftX 1.1.2</span>
@@ -142,14 +142,14 @@ nav{position:relative;z-index:9999;}
   </div>
 
   <div class="news-section">
-    <div class="news-title">GALACTIC NEWS</div>
+    <div class="news-title">MIRSKI NEWS</div>
     <div class="news-grid" id="newsGrid"></div>
   </div>
 </div>
 
 <div class="page" id="page-downloads">
   <div class="downloads-page">
-    <div class="downloads-title">GALACTIC DOWNLOADS</div>
+    <div class="downloads-title">MIRSKI DOWNLOADS</div>
     <div class="downloads-list" id="downloadsList"></div>
   </div>
 </div>
@@ -172,7 +172,7 @@ nav{position:relative;z-index:9999;}
 </div>
 
 <footer>
-  <span>© 2026 Galactic · v1.1.0</span>
+  <span>© 2026 MIRSKI · v1.1.0</span>
   <span>Made by DopeWoah Aka QZ</span>
 </footer>
 
@@ -181,46 +181,46 @@ nav{position:relative;z-index:9999;}
 
 /* ── Data ── */
 const VERSIONS = [
-  { label: "1.0.0", file: "Galactic-Client-1.0.0.html", name: "Version 1" },
-  { label: "2.0.0", file: "Galactic-Client-2.0.0.html", name: "Version 2" },
-  { label: "3.0.0", file: "Galactic-Client-3.0.0.html", name: "Version 3" },
-  { label: "4.0.0", file: "Galactic-Client-4.0.0.html", name: "Version 4" },
-  { label: "5.0.0", file: "Galactic-Client-5.0.0.html", name: "Version 5" },
-  { label: "6.0.0", file: "Galactic-Client-6.0.0.html", name: "Version 6" },
-  { label: "6.4.0", file: "Galactic-Client-6.4.0.html", name: "EaglercraftX 1.1.2" },
-  { label: "6.6.0", file: "Galactic-Client-6.6.0.html", name: "EaglercraftX 1.1.2" },
+  { label: "1.0.0", file: "MIRSKI-Client-1.0.0.html", name: "Version 1" },
+  { label: "2.0.0", file: "MIRSKI-Client-2.0.0.html", name: "Version 2" },
+  { label: "3.0.0", file: "MIRSKI-Client-3.0.0.html", name: "Version 3" },
+  { label: "4.0.0", file: "MIRSKI-Client-4.0.0.html", name: "Version 4" },
+  { label: "5.0.0", file: "MIRSKI-Client-5.0.0.html", name: "Version 5" },
+  { label: "6.0.0", file: "MIRSKI-Client-6.0.0.html", name: "Version 6" },
+  { label: "6.4.0", file: "MIRSKI-Client-6.4.0.html", name: "EaglercraftX 1.1.2" },
+  { label: "6.6.0", file: "MIRSKI-Client-6.6.0.html", name: "EaglercraftX 1.1.2" },
 ];
 
 const NEWS_ITEMS = [
   {
     version: "6.6.0 ",
-    ghUrl: "https://github.com/GalacticClient/Galactic-Client/releases/tag/6.4.0",
+    ghUrl: "https://github.com/MIRSKIClient/MIRSKI-Client/releases/tag/6.4.0",
     notes: ["Version 6.6.0 Release", "Fixed FreeCam", "Added Keystrokes", "Added AutoXP", "Updated MainMenu", "And More!"],
     date: "June 2026", author: "DopeWoah"
   },
   {
     version: "6.2.0",
-    ghUrl: "https://github.com/GalacticClient/Galactic-Client/releases/tag/6.2.0",
+    ghUrl: "https://github.com/MIRSKIClient/MIRSKI-Client/releases/tag/6.2.0",
     notes: ["Version 6.20 Release", "Fixed AutoSprint", "Brand new Red-Black GUI", "Add hostile/passive option back to KillAura", "Added AimAssist"],
     date: "May 30th", author: "DopeWoah"
   },
   {
     version: "6.0.0",
-    ghUrl: "https://github.com/GalacticClient/Galactic-Client/releases/tag/6.0.0",
+    ghUrl: "https://github.com/MIRSKIClient/MIRSKI-Client/releases/tag/6.0.0",
     notes: ["Version 6.0 Release", "Added TabGUI", "Added CrystalAura & CrystalAuraLegit", "Added bypasses for anticheats (KillAura, TriggerBot, CrystalAura)", "Added AutoMace"],
     date: "May 2025", author: "DopeWoah"
   }
 ];
 
 const DOWNLOAD_ITEMS = [
-  { name: "Galactic 6.6.0", desc: "Newest version of the Client", url: "https://github.com/GalacticClient/Galactic-Client" },
-  { name: "Galactic 6.2.0", desc: "Version 6.2.0", url: "https://github.com/GalacticClient/Galactic-Client" },
-  { name: "Galactic 6.0",   desc: "Version 6.0",   url: "https://github.com/GalacticClient/Galactic-Client" },
-  { name: "Galactic 5",     desc: "Version 5.0",   url: "https://github.com/GalacticClient/Galactic-Client" },
-  { name: "Galactic 4",     desc: "Version 4.0",   url: "https://github.com/GalacticClient/Galactic-Client" },
-  { name: "Galactic 3",     desc: "Version 3.0",   url: "https://github.com/GalacticClient/Galactic-Client" },
-  { name: "Galactic 2",     desc: "Version 2.0",   url: "https://github.com/GalacticClient/Galactic-Client" },
-  { name: "Galactic 1",     desc: "Version 1.0",   url: "https://github.com/GalacticClient/Galactic-Client" },
+  { name: "MIRSKI 6.6.0", desc: "Newest version of the Client", url: "https://github.com/MIRSKIClient/MIRSKI-Client" },
+  { name: "MIRSKI 6.2.0", desc: "Version 6.2.0", url: "https://github.com/MIRSKIClient/MIRSKI-Client" },
+  { name: "MIRSKI 6.0",   desc: "Version 6.0",   url: "https://github.com/MIRSKIClient/MIRSKI-Client" },
+  { name: "MIRSKI 5",     desc: "Version 5.0",   url: "https://github.com/MIRSKIClient/MIRSKI-Client" },
+  { name: "MIRSKI 4",     desc: "Version 4.0",   url: "https://github.com/MIRSKIClient/MIRSKI-Client" },
+  { name: "MIRSKI 3",     desc: "Version 3.0",   url: "https://github.com/MIRSKIClient/MIRSKI-Client" },
+  { name: "MIRSKI 2",     desc: "Version 2.0",   url: "https://github.com/MIRSKIClient/MIRSKI-Client" },
+  { name: "MIRSKI 1",     desc: "Version 1.0",   url: "https://github.com/MIRSKIClient/MIRSKI-Client" },
 ];
 
 /* ── Version selector ── */
@@ -291,10 +291,10 @@ function buildNews() {
       <div class="news-card-banner">
         <div class="ncb-bg"></div>
         <div class="ncb-grid"></div>
-        <img class="ncb-avatar" src="https://avatars.githubusercontent.com/GalacticClient?v=4" alt="GalacticClient" onerror="this.src='https://github.com/identicons/GalacticClient.png'">
+        <img class="ncb-avatar" src="https://avatars.githubusercontent.com/MIRSKIClient?v=4" alt="MIRSKIClient" onerror="this.src='https://github.com/identicons/MIRSKIClient.png'">
         <div class="ncb-info">
-          <div class="ncb-user">GalacticClient</div>
-          <div class="ncb-repo">Galactic-Client</div>
+          <div class="ncb-user">MIRSKIClient</div>
+          <div class="ncb-repo">MIRSKI-Client</div>
           <div class="ncb-tag">RELEASE ${item.version}</div>
         </div>
       </div>
